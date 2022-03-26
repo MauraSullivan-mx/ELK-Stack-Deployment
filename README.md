@@ -85,11 +85,11 @@ We have installed the following Beats on these machines:
 
 These Beats allow us to collect the following information from each machine:
 
-**Filebeat**
+### Filebeat
 
 Filebeat monitors the log files on a machine, collecting the log events and sending them to a centralized location. You can explore this log information in a tool such as Kibana.
 
-**Metricbeat**
+### Metricbeat
 
 Metric monitors the Operating System and service metrics on a machine. It captures information such as CPU or memory usage, and load and networking metrics.
 
@@ -102,8 +102,8 @@ Update the /etc/ansible/hosts file to include a group called [elk] with the IP a
 * 10.2.0.4 ansible_python_interpreter=/usr/bin/python3
 
 Use the following command to run the playbook:
-**ansible-playbook install-elk.yml**
+
+_ansible-playbook install-elk.yml_
 
 To confirm that everything has been correctly configured, navigate to http://20.127.133.95:5601/app/kibana to check that the installation worked as expected.
 
-As a Bonus, provide the specific commands the user will need to run to download the playbook, update the files, etc.
