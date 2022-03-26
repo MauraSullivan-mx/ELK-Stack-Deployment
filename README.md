@@ -3,24 +3,24 @@ The files in this repository can be used to automatically deploy an ELK stack
 
 Note: The following image link needs to be updated. Replace diagram_filename.png with the name of your diagram image file.
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+![alt text](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/Unit12_HW_CloudNetwork_MSullivan.pdf "Cloud Test")
 
-TODO: Enter the playbook file.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the [playbook files](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/tree/main/Ansible/Files) may be used to install only certain pieces of it, such as Filebeat.
+
+[Filebeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/filebeat-playbook.yml)
+[Metricbeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/metricbeat-playbook.yml)
 
 This document contains the following details:
 
-Description of the Topology
-Access Policies
-ELK Configuration
-
-Beats in Use
-Machines Being Monitored
-
-
-How to Use the Ansible Build
+..*Description of the Topology
+..*Access Policies
+..*ELK Configuration
+..*Beats in Use
+..*Machines Being Monitored
+..*How to Use the Ansible Build
 
 
-Description of the Topology
+## Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
 
@@ -34,43 +34,16 @@ TODO: What does Metricbeat record?
 The configuration details of each machine may be found below.
 Note: Use the Markdown Table Generator to add/remove values from the table.
 
+Name | Function | IP Address | Operating System |
+----- | ---- | ---- | ---- |
+Jump Box | Gateway | 10.0.0.1 | Linux (ubuntu 20.04) |
+ELK | Runs ELK stack | 10.2.0.4 | Linux (ubuntu 20.04) |
+Web-1 | Runs DVWA | 10.1.0.5 | Linux (ubuntu 20.04) |
+Web-2 | Runs DVWA | 10.1.0.6 | Linux (ubuntu 20.04) |
+DVWA-VM3 | Runs DVWA | 10.1.0.7 | Linux (ubuntu 20.04)|
 
 
-Name
-Function
-IP Address
-Operating System
-
-
-
-
-Jump Box
-Gateway
-10.0.0.1
-Linux
-
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-TODO
-
-
-
-
-
-
-
-Access Policies
+## Access Policies
 The machines on the internal network are not exposed to the public Internet.
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
@@ -108,7 +81,7 @@ Yes/No
 
 
 
-Elk Configuration
+## Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
 TODO: What is the main advantage of automating configuration with Ansible?
@@ -123,7 +96,7 @@ The following screenshot displays the result of running docker ps after successf
 Note: The following image link needs to be updated. Replace docker_ps_output.png with the name of your screenshot image file.
 
 
-Target Machines & Beats
+## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 TODO: List the IP addresses of the machines you are monitoring
@@ -137,7 +110,7 @@ These Beats allow us to collect the following information from each machine:
 TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., Winlogbeat collects Windows logs, which we use to track user logon events, etc.
 
 
-Using the Playbook
+## Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned:
 SSH into the control node and follow the steps below:
 
