@@ -1,5 +1,5 @@
 # ELK-Stack-Deployment
-The files in this repository can be used to automatically deploy an ELK stack
+The files in this repository can be used to automatically deploy an ELK stack.
 
 Note: The following image link needs to be updated. Replace diagram_filename.png with the name of your diagram image file.
 
@@ -12,12 +12,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 This document contains the following details:
 
-..*Description of the Topology
-..*Access Policies
-..*ELK Configuration
-..*Beats in Use
-..*Machines Being Monitored
-..*How to Use the Ansible Build
+* Description of the Topology
+* Access Policies
+* ELK Configuration
+* Beats in Use
+* Machines Being Monitored
+* How to Use the Ansible Build
 
 
 ## Description of the Topology
