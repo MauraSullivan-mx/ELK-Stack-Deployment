@@ -3,7 +3,7 @@ The files in this repository can be used to automatically deploy an ELK stack.
 
 Note: The following image link needs to be updated. Replace diagram_filename.png with the name of your diagram image file.
 
-![alt text](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/Unit12_HW_CloudNetwork_MSullivan.pdf "Cloud Test")
+![Elk Stack Deployment](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/ELK%20Deployment%20Network%20Diagram.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the [Ansible files](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/tree/main/Ansible) may be used to install only certain pieces of it, such as Filebeat.
 
@@ -69,8 +69,7 @@ TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., inst
 * here
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
-### Note: The following image link needs to be updated. Replace docker_ps_output.png with the name of your screenshot image file.
-test link here
+![docker ps result after running install-elk.yml](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/dock_ps_output.png)
 
 ## Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -87,9 +86,11 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 
 _Filebeat_
+
 Filebeat monitors the log files on a machine, collecting the log events and sending them to a centralized location. You can explore this log information in a tool such as Kibana.
 
 _Metricbeat_
+
 Metric monitors the Operating System and service metrics on a machine. It captures information such as CPU or memory usage, and load and networking metrics.
 
 ## Using the Playbook
