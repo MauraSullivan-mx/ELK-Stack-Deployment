@@ -5,10 +5,10 @@ Note: The following image link needs to be updated. Replace diagram_filename.png
 
 ![alt text](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/Unit12_HW_CloudNetwork_MSullivan.pdf "Cloud Test")
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the [playbook files](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/tree/main/Ansible/Files) may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the [Ansible files](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/tree/main/Ansible) may be used to install only certain pieces of it, such as Filebeat.
 
-[Filebeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/filebeat-playbook.yml)
-[Metricbeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/metricbeat-playbook.yml)
+* [Filebeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/filebeat-playbook.yml)
+* [Metricbeat Playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/Files/metricbeat-playbook.yml)
 
 This document contains the following details:
 
