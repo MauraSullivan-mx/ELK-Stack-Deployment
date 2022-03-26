@@ -1,8 +1,6 @@
 # ELK-Stack-Deployment
 The files in this repository can be used to automatically deploy an ELK stack.
 
-Note: The following image link needs to be updated. Replace diagram_filename.png with the name of your diagram image file.
-
 ![Elk Stack Deployment](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/ELK%20Deployment%20Network%20Diagram.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the [Ansible files](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/tree/main/Ansible) may be used to install only certain pieces of it, such as Filebeat.
@@ -62,11 +60,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The [Install-Elk playbook](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Ansible/install-elk.yml) implements the following tasks:
 
 TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc.
-* here
-* here
-* here
-* here
-* here
+* Configures the target VM to use more memory so that ELK runs properly
+* Installs docker.io & Python
+* Installs the Python client for Docker
+* Downloads the Docker container from sebp that has ELK v. 761
+* Publishes port connections 5601:5601, 9200:9200, and 5044:5044 to allow for connections and monitoring
 
 The following screenshot displays the result of running docker ps after successfully configuring the ELK instance.
 ![docker ps result after running install-elk.yml](https://github.com/MauraSullivan-mx/ELK-Stack-Deployment/blob/main/Diagrams/dock_ps_output.png)
